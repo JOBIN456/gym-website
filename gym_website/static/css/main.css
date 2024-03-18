@@ -2,6 +2,54 @@
     margin: 0;
     padding: 0;
 }
-.first{
-    color:aquamarine
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.gym-nav{
+    background-color: #0c1f34;
+    width:100%;
+    position: fixed;
+    top:0;
+    display: flex;
+flex-direction:row;
+height:70px;
+}
+
+.gym-pages{
+    list-style-type: none;
+    display: flex;
+  flex-direction: row;
+  gap:4vw;
+  margin:auto;
+}
+.page-links{
+    
+    
+    width:6vw;
+    text-decoration: none;
+    color:#697078;
+}
+.page-links:hover{
+    width: 6vw;
+  height: auto;
+  transform: skew(-20deg);
+  background: #10bcf4;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin:auto;
+}
+
+
+.gym-name{
+    font-family: inherit;
+    color:white;
+    font-weight: 600;
+    margin: auto;
+}
+.nav-caption{
+    margin:1%;
+
 }
