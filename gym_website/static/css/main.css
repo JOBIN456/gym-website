@@ -20,26 +20,37 @@ height:70px;
 .gym-pages{
     list-style-type: none;
     display: flex;
-  flex-direction: row;
-  gap:4vw;
-  margin:auto;
-}
+    flex-direction: row;
+    gap: 5vw;
+    margin-top: 1%;
+    width: 60%;
+    margin-bottom: 1%;
+    margin-left: 12vw;
+    animation: fadeInAnimation ease 3s;
+  }
+
+  @keyframes fadeInAnimation{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
 .page-links{
     
     
-    width:6vw;
+    width:10%;
     text-decoration: none;
     color:#697078;
 }
 .page-links:hover{
-    width: 6vw;
-  height: auto;
-  transform: skew(-20deg);
-  background: #10bcf4;
-  text-decoration: none;
+   
+ 
+  
   color: white;
-  text-align: center;
-  margin:auto;
+  
+ 
 }
 
 
@@ -48,8 +59,37 @@ height:70px;
     color:white;
     font-weight: 600;
     margin: auto;
+    animation: fadeInAnimation ease 3s;
 }
+
+@keyframes fadeInAnimation{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
 .nav-caption{
     margin:1%;
 
+}
+@keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(40px) skew(-20deg);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0) skew(-20deg);
+    }
+}
+
+.gym-time {
+    transform: skew(-20deg);
+    background: #10bcf4;
+    width: 15%;
+    position: relative;
+    left: 2vw;
+    animation: fadeInRight ease 5s; 
 }
