@@ -201,7 +201,7 @@ body{
  .my-carousel-image{
     max-height:800px;
     height:100%;
-    /* object-fit:cover; */
+    object-fit:cover;
     width:100%;
  }
  .gym-pages-2{
@@ -410,4 +410,18 @@ body{
   
 .gym-card-1{
     width:20%;
+}
+
+.parallex{
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+}
+.my-cards{
+    max-height:400px;
+    height:600px; 
+    background-color: #10bcf4;
 }
