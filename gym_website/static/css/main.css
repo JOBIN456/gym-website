@@ -15,7 +15,7 @@ body{
     display: flex;
     flex-direction:row;
     height:80px;
-}
+    z-index: 999;}
 
 @media screen and (max-width:850px) {
     .gym-nav{
@@ -67,7 +67,7 @@ body{
     font-weight: 600;
     margin: auto;
     font-size: clamp(1.15rem, 1.0825rem + 0.3859vw, 1.45rem);
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 2s;
     text-align: center;
 }
 
@@ -93,7 +93,7 @@ body{
 @keyframes fadeInRight {
     0% {
        opacity: 0;
-       transform: translateX(40px) skew(-20deg);
+       transform: translateX(100px) skew(-20deg);
     }
     100% {
        opacity: 1;
@@ -131,7 +131,7 @@ body{
 }
 
 .gym-nav-2{
-    display: none;
+    display: none !important;
 }
 @media screen and (max-width:850px)
 {
@@ -140,18 +140,274 @@ body{
         width:100%;
         position: fixed;
         top:0;
-        display: flex;
-    flex-direction:row;
-    height:80px;
-    justify-content: space-between;
+        display: flex !important;
+        flex-direction:row;
+        justify-content: space-between;
+        z-index: 999;
     } 
 } 
 .nav-caption-2{
     text-align: center;
      margin: 20px;
 }
-.white-line{
-    width:3px;
-    height:2px;
-    background-color: white;
+
+.gym-name-2{
+    font-family: inherit;
+  color: white;
+  font-weight: 600;
+  font-size: clamp(1.15rem, 1.0825rem + 0.3859vw, 1.45rem);
+  animation: fadeInAnimation ease 3s;
+  text-align: center;
+  text-decoration: none;
+}
+@keyframes fadeInAnimation{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+.nav-caption{
+    margin: auto;
+
+}
+
+.page-links-1{
+    
+    
+     text-decoration: none;
+     color:#697078 !important;
+     animation: fadeInAnimation ease 3s;
+
+ }
+ @keyframes fadeInAnimation{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+ .page-links-1:hover{
+    
+  
+   
+   color: white !important;
+   
+  
+ }
+ 
+ .my-carousel-image{
+    max-height:800px;
+    height:100%;
+    /* object-fit:cover; */
+    width:100%;
+ }
+ .gym-pages-2{
+    z-index: 999;
+ }
+ .carousel-adjust{
+    margin-top:5vw;
+ }
+ @media screen and (max-width:850px) {
+    .carousel-adjust{
+        margin-top: 0;
+    }
+    
+ }
+ .inside-carousel{
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    background: #10bcf4;
+    transform: skew(-20deg);
+    left: 1%;
+    height: 7%;
+    animation:fadeLeft ease 2s;
+
+ }
+ @keyframes fadeLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-400px) skew(-20deg);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0) skew(-20deg);
+    }
+}
+ .inside-carousel h6{
+    color: white;
+  font-weight: 600;
+  text-align: center;
+  transform: skew(20deg);
+  font-size: clamp(0.45rem, 0.1011rem + 1.9936vw, 2rem); }
+
+
+
+  .inside-carousel-2{
+    position: absolute;
+    top: 55%;
+    width: 50%;
+    background: #0c1f34;
+    transform: skew(-20deg);
+    right: 1%;
+    height: 7%;
+    animation:faderight ease 2s;
+
+ }
+ @keyframes faderight {
+    0% {
+       opacity: 0;
+       transform: translateX(400px) skew(-20deg);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0) skew(-20deg);
+    }
+}
+ .inside-carousel-2 h6{
+    color: white;
+  font-weight: 600;
+  text-align: center;
+  transform: skew(20deg);
+  font-size: clamp(0.45rem, 0.1011rem + 1.9936vw, 2rem); }
+
+
+
+
+  
+  .inside-carousel-3{
+    position: absolute;
+    top: 35%;
+    width: 50%;
+    background: #0c1f34;
+    transform: skew(-20deg);
+    left: 25%;
+    height: 7%;
+    animation: fadetop ease 2s;
+
+ }
+ @keyframes fadetop {
+    0% {
+       opacity: 0;
+       transform: translateY(-400px) skew(-20deg);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0) skew(-20deg);
+    }
+}
+ .inside-carousel-3 h6{
+    color: white;
+  font-weight: 600;
+  text-align: center;
+  transform: skew(20deg);
+  font-size: clamp(0.45rem, 0.1011rem + 1.9936vw, 2rem); }
+
+
+
+  .inside-carousel-4{
+    position: absolute;
+    bottom: 44%;
+    width: 50%;
+    background: #e75480;
+    transform: skew(-20deg);
+    left: 30%;
+    height: 7%;
+    animation: fadebottom ease 2s;
+
+ }
+ @keyframes fadebottom {
+    0% {
+       opacity: 0;
+       transform: translateY(400px) skew(-20deg);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0) skew(-20deg);
+    }
+}
+ .inside-carousel-4 h6{
+    color: white;
+  font-weight: 600;
+  text-align: center;
+  transform: skew(20deg);
+  font-size: clamp(0.45rem, 0.1011rem + 1.9936vw, 2rem); }
+
+
+
+
+
+
+
+  
+  .inside-carousel-5{
+    position: absolute;
+    top: 35%;
+    width: 50%;
+    background: #0c1f34;
+    transform: skew(-20deg);
+    left: 2%;
+    height: 7%;
+    animation: fadetop ease 2s;
+
+ }
+ @keyframes fadetop {
+    0% {
+       opacity: 0;
+       transform: translateY(-400px) skew(-20deg);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0) skew(-20deg);
+    }
+}
+ .inside-carousel-5 h6{
+    color: white;
+  font-weight: 600;
+  text-align: center;
+  transform: skew(20deg);
+  font-size: clamp(0.45rem, 0.1011rem + 1.9936vw, 2rem); }
+
+
+
+  .inside-carousel-6{
+    position: absolute;
+    bottom: 35%;
+    width: 50%;
+    background: #e75480;
+    transform: skew(-20deg);
+    right: 2%;
+    height: 7%;
+    animation: fadebottom ease 2s;
+
+ }
+ @keyframes fadebottom {
+    0% {
+       opacity: 0;
+       transform: translateY(400px) skew(-20deg);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0) skew(-20deg);
+    }
+}
+ .inside-carousel-6 h6{
+    color: white;
+  font-weight: 600;
+  text-align: center;
+  transform: skew(20deg);
+  font-size: clamp(0.45rem, 0.1011rem + 1.9936vw, 2rem); }
+
+
+
+
+.gym-cards{
+    width:100%
+}
+  
+.gym-card-1{
+    width:20%;
 }
