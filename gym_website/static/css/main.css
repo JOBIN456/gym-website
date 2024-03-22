@@ -404,15 +404,136 @@ body{
 
 
 
-.gym-cards{
-    width:100%
+
+
+
+.my-cards{
+    
+    width:100%;
+    height:70vh;
+    display:flex;
+   
+   
+    background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));    
+   
+
 }
-  
-.gym-card-1{
-    width:20%;
+@media screen and (max-width:1200px)
+{
+    .my-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 120vh;
+    }
+    
+
 }
 
-.parallex{
+@media screen and (max-width:653px)
+{
+  .my-cards  {
+        height: 200vh;
+    }
+}
+
+@media screen and (max-width:450px){
+    .my-cards{
+        height:250vh;
+    }
+}
+.image-card1{
+    margin:auto;
+    max-width:300px;
+    width:100%;
+    max-height:400px;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    transition: transform .2s;
+    animation:zoomin ease-in 2s;
+
+}
+.image-card1:hover{
+    transform: scale(1.025); 
+}
+
+@keyframes zoomin{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .image-card1 {
+        margin: 2% 1% 2% 1%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .image-card1 {
+      margin: 3%;
+    }
+  }
+
+.image-card1:hover .inside-image-card1{
+    display:block;
+    max-width:300px;
+    width:100%;
+    max-height: 131px;
+    height: 100%;
+    border-radius: 2rem;
+    position: relative;
+    top: 269px;
+    background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));
+    animation:bottomup ease 1s;
+
+}
+
+@keyframes bottomup{
+    0% {
+        opacity: 0;
+      
+     }
+     100% {
+        opacity: 1;
+      
+     }
+}
+
+.inside-image-card1{
+    display: none;
+}
+.inside-image-card1 h6{
+ color:white;
+ font-weight:600;
+ font-size:1.35rem;
+ text-align:center;
+ padding:4%;
+
+
+}
+.inside-image-card1 p{
+    color:white;
+    text-align:center;
+    margin:auto;
+    padding:2%;
+   
+   
+   }
+
+.heading-for-cards{
+    background-color: #0c1f34;
+    height:100px;
+}
+
+
+.parallax{
     width:100%;
     background-attachment: fixed;
     background-position: center;
@@ -420,8 +541,32 @@ body{
     background-size: cover;
     height:700px;
 }
-.my-cards{
-    max-height:400px;
-    height:600px; 
-    background-color: #10bcf4;
+.parallex-blue{
+    background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));
+    height: 500px;
+}
+
+.welecome-tag{
+    margin:auto;
+}
+.welecome-tag h6{
+    font-weight: 600;
+    color:white;
+    text-align:center;
+    font-size: clamp(1.45rem, 1.1011rem + 1.9936vw, 3rem);
+}
+
+
+.welecome-tag h3{
+    color:white;
+    font-size: clamp(1rem, 0.7749rem + 1.2862vw, 2rem);    text-align: center;
+}
+
+.blue-card{
+    width:30%;
+    height:200px;
+}
+.blue-card img{
+    width:100%;
+    height:100%;
 }
