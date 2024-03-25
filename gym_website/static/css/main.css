@@ -706,7 +706,6 @@ transform:  scale(1.022);
 
  .offer{
     width:100%;
-    height: 500px;
     background-color: white;
  }
 
@@ -718,6 +717,18 @@ transform:  scale(1.022);
     font-family: Montserrat,sans-serif;
     margin-top: 32px;
     font-weight: 700;
+    font-size: clamp(1rem, 0.8987rem + 0.5788vw, 1.45rem);
+    animation:fadein ease 2s;
+
+ }
+
+ @keyframes fadein{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
  }
  .offer h2{
     text-align: center;
@@ -726,28 +737,249 @@ transform:  scale(1.022);
     margin-top: 32px;
     font-weight: 700;
     letter-spacing: 10px; 
+    font-size: clamp(1.45rem, 1.3262rem + 0.7074vw, 2rem);
+    animation:fadein ease 2s;
+ }
+ @keyframes fadein{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+ }
+
+
+ @media screen and (max-width:435px){
+    .offer h2{
+       margin-top:22px;
+       letter-spacing: 4px; 
+    }
  }
 
  .offerlist{
-    display:flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    gap: 3%;
+    flex-wrap: wrap;
  }
  .offerlist-1{
-    width: 25%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation:fadein ease 2s;
 
+
+ }
+
+ @keyframes fadein{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+ }
+
+ @media screen and (max-width:1200px){
+    .offerlist-1{
+        min-width: 28%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+    }
+ }
+
+
+ @media screen and (max-width:957px){
+    .offerlist-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+        width:100%;
+    }
  }
  .offerlist-1  h6{
     font-weight:700;
     color: #2d2d2d;
     font-family: Montserrat,sans-serif;
-    font-size:1.45rem;
-
+    font-size: clamp(1rem, 0.8987rem + 0.5788vw, 1.45rem);
  }
  .offerlist-1{
     color: #525252;
     font-family: Montserrat,sans-serif;
     text-align: center;
  } 
+
+
+
+
+                       /* FOOTER */
+
+.my-footer{
+    width:100%;
+    height:400px;
+    background-color: #0c1f34;
+
+}
+@media screen and ( max-width:991px)
+{
+    .my-footer{
+        display: none;
+    }
+}
+
+.footer-inside{
+    display: flex;
+
+}
+
+.caption-footer{
+    width:25%;
+    margin:4%;
+}
+.caption-footer h3{
+    color:white;
+    font-weight: 600;
+    font-size: clamp(1.15rem, 1.0825rem + 0.3859vw, 1.45rem);
+    /* animation: fadeInAnimation ease 2s; */
+    text-align: center;
+}
+.caption-footer p{
+    color:white;
+    font-weight: 600;
+    text-align: center;
+
+}
+.footer-social-media{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+
+}
+.quick-links{
+    display: flex;
+    flex-direction: column;
+    margin:4%;
+    gap:10px;
+    width:25%;
+}
+.quick-links a{
+    text-decoration: none;
+    color:white;
+}
+.Footer-link{
+    color:white;
+    font-weight: 600;
+
+}
+.get-in-touch{
+    margin:4%;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    width:25%;
+
+}
+.get-in-touch a{
+    text-decoration:none;
+    color:white;
+}
+.get-in-touch h6{
+    color:white;
+    font-weight:500;
+
+
+}
+
+.copyright{
+    width:100%;
+
+}
+.copyright h6{
+    color:white;
+    margin:auto;
+    text-align:center;
+}
+.my-footer-2{
+    display:none;
+}
+@media screen and ( max-width:991px){
+    .my-footer-2{
+        display: block;
+        width:100%;
+        background-color: #0c1f34;
+    }
+}
+
+
+.caption-footer-2{
+    width:100%;
+    margin:auto;
+
+}
+.caption-footer-2 h3{
+    font-weight: 600;
+    color:white;
+    text-align: center;
+    padding:2%;
+    font-size: clamp(1.35rem, 1.094rem + 1.4627vw, 2rem);}
+
+
+.caption-footer-2 p{
+    color:white;
+    text-align:center;
+    font-size: clamp(0.95rem, 0.8712rem + 0.4501vw, 1.15rem);
+    margin: auto;
+}
+.my-acc{
+    background-color: #0c1f34 !important;
+    margin: 11%;
+    
+}
+
+.thefirst-acc a{
+    text-decoration: none;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+
+}
+.thesecond-acc a{
+    text-decoration: none;
+    color:white;
+   
+
+}
+.footer-social-media-2{
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.copyright-2{
+    width: 100%;
+    height: 50px;
+}
+
+.copyright-2 h6{
+    color:white;
+    text-align: center;
+}
+
+.Footer-link-1{
+    color:white;
+    font-size: clamp(1.35rem, 1.094rem + 1.4627vw, 2rem);
+    font-weight:500
+}
+
