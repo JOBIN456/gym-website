@@ -1042,16 +1042,21 @@ transform:  scale(1.022);
 
 
 /* .accordion-button.collapsed::after {
-    background: url("/static/images/phone.png")!important;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .accordion-button:not(.collapsed)::after {
-    background: url("plus.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  } */
+    content: "";
+    background: url("/static/images/phone.png") no-repeat center; 
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: ""; 
+    background: url("plus.svg") no-repeat center; 
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+} */
+
 
   .h-about{
     width:100%;
