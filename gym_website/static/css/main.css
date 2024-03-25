@@ -15,7 +15,10 @@ body{
     display: flex;
     flex-direction:row;
     height:80px;
-    z-index: 999;}
+    z-index: 999;
+
+
+}
 
 @media screen and (max-width:850px) {
     .gym-nav{
@@ -82,7 +85,18 @@ body{
 .nav-caption{
     margin: auto;
     display: flex;
+    animation: fadeInAnimation ease 3s;
 
+
+}
+@keyframes fadeInAnimation{
+    0%{
+        opacity:0;
+
+    }
+    100%{
+        opacity:1;
+    }
 }
 @media screen and (max-width:940px)
 {
@@ -839,9 +853,19 @@ transform:  scale(1.022);
 
 .footer-inside{
     display: flex;
+        animation: fadeInAnimation ease 2s;
+
 
 }
+@keyframes fadeInAnimation{
+    0%{
+        opacity:0;
 
+    }
+    100%{
+        opacity:1;
+    }
+}
 .caption-footer{
     width:25%;
     margin:4%;
@@ -850,7 +874,6 @@ transform:  scale(1.022);
     color:white;
     font-weight: 600;
     font-size: clamp(1.15rem, 1.0825rem + 0.3859vw, 1.45rem);
-    /* animation: fadeInAnimation ease 2s; */
     text-align: center;
 }
 .caption-footer p{
@@ -908,7 +931,19 @@ transform:  scale(1.022);
     color:white;
     margin:auto;
     text-align:center;
+    animation: fadeInAnimation ease 2s;
+
 }
+@keyframes fadeInAnimation{
+    0%{
+        opacity:0;
+
+    }
+    100%{
+        opacity:1;
+    }
+}
+
 .my-footer-2{
     display:none;
 }
@@ -917,9 +952,19 @@ transform:  scale(1.022);
         display: block;
         width:100%;
         background-color: #0c1f34;
+        animation: fadeInAnimation ease 2s;
+
     }
 }
+@keyframes fadeInAnimation{
+    0%{
+        opacity:0;
 
+    }
+    100%{
+        opacity:1;
+    }
+}
 
 .caption-footer-2{
     width:100%;
@@ -975,7 +1020,19 @@ transform:  scale(1.022);
 .copyright-2 h6{
     color:white;
     text-align: center;
+    animation: fadeInAnimation ease 2s;
+
 }
+@keyframes fadeInAnimation{
+    0%{
+        opacity:0;
+
+    }
+    100%{
+        opacity:1;
+    }
+}
+
 
 .Footer-link-1{
     color:white;
@@ -983,3 +1040,88 @@ transform:  scale(1.022);
     font-weight:500
 }
 
+
+/* .accordion-button.collapsed::after {
+    background: url("/static/images/phone.png")!important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    background: url("plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
+
+  .h-about{
+    width:100%;
+    background-color: #242529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+@media screen and (max-width:958px){
+    .h-about{
+        flex-direction: column-reverse;
+    }
+}
+  .i-about{
+    width:80%;
+  }
+.ins-about{
+    width: 80%;
+    max-height: 600px;
+    padding: 8% 0 8% 8%;   
+    height: 100%;
+    border-radius:.65rem;
+    object-fit:contain;
+}
+@media screen and (max-width:958px){
+    .ins-about{
+        width: 100%;
+        max-height: 600px;
+        padding: 8% 0 8% 0;
+        height: 100%;
+        border-radius: .65rem;
+    }
+}
+
+  .about-details{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 0 4% 0 0;
+
+  }
+
+  @media screen and (max-width:958px){
+    .about-details{
+        width:80%;
+        justify-content: center;
+        align-items: center;
+        padding:4% 0 0 0;
+    }
+}
+  .about-details h3{
+    color:white;
+    font-weight:600;
+  }
+
+  .about-details p{
+    color:white;
+    text-align: justify;
+    font-size: clamp(0.95rem, 0.9048rem + 0.2583vw, 1.15rem);
+   
+}
+  
+.ab-button{
+    background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));
+    color:white;
+    width:170px;
+    height:50px;
+    text-align: center;
+    border:0;
+    border-radius: 0.45rem;
+  }
