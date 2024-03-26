@@ -8,9 +8,9 @@
     <ul class="gym-pages">
         <a class="page-links" href="/"><li class="page-names">Home</li></a>
         <a class="page-links" href="{% url 'about' %}"><li class="page-names">About Us</li></a>
-        <a class="page-links" href="#"><li class="page-names">Facilities</li></a>
-        <a class="page-links" href="#"><li class="page-names">Trainers</li></a>
-        <a class="page-links" href="#"><li class="page-names">Contact Us</li></a>
+        <a class="page-links" href="{% url 'facilities' %}"><li class="page-names">Facilities</li></a>
+        <a class="page-links" href="{% url 'trainers' %}"><li class="page-names">Trainers</li></a>
+        <a class="page-links" href="{% url 'contact' %}"><li class="page-names">Contact Us</li></a>
     </ul>
     <div class="gym-time">
    <h6 class="time"><img class="clock" src="{% static 'images/alarm.png' %}">Time</h6>
@@ -38,13 +38,13 @@
           <a class="nav-link page-links-1" href="{% url 'about' %}">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link page-links-1" href="#">Facilities</a>
+          <a class="nav-link page-links-1" href="{% url 'facilities' %}">Facilities</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link page-links-1" href="#">Trainers</a>
+            <a class="nav-link page-links-1" href="{% url 'trainers' %}">Trainers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link page-links-1" href="#">Contact Us</a>
+            <a class="nav-link page-links-1" href="{% url 'contact' %}">Contact Us</a>
           </li>    
       </ul>
     </div>  
