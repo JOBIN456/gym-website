@@ -2,12 +2,12 @@
 
 <nav class="gym-nav">
     <div class="nav-caption">
-        <img  width="70px" height="70px"  src="{% static 'images/logo.png' %}" >
+        <img   src="{% static 'images/logo.png' %}" >
         <h3 class="gym-name"> Phoenix Gym</h3>
     </div>
     <ul class="gym-pages">
         <a class="page-links" href="/"><li class="page-names">Home</li></a>
-        <a class="page-links" href="#"><li class="page-names">About Us</li></a>
+        <a class="page-links" href="{% url 'about' %}"><li class="page-names">About Us</li></a>
         <a class="page-links" href="#"><li class="page-names">Facilities</li></a>
         <a class="page-links" href="#"><li class="page-names">Trainers</li></a>
         <a class="page-links" href="#"><li class="page-names">Contact Us</li></a>
@@ -35,7 +35,7 @@
           <a class="nav-link page-links-1" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link page-links-1" href="#">About Us</a>
+          <a class="nav-link page-links-1" href="{% url 'about' %}">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link page-links-1" href="#">Facilities</a>
