@@ -1615,7 +1615,7 @@ animation: pulse 2s 1s ease-out infinite;
     font-weight:600;
     color:white;
     position: relative;
-    bottom: 55%;
+    bottom: 40%;
     text-align: center;
     letter-spacing: 1;
     font-size: clamp(1.75rem, 1.4675rem + 1.6142vw, 3rem);  
@@ -1665,7 +1665,7 @@ animation: pulse 2s 1s ease-out infinite;
     font-weight:600;
     color:white;
     position: relative;
-    bottom: 55%;
+    bottom: 40%;
     text-align: center;
     letter-spacing: 1;
     font-size: clamp(1.75rem, 1.4675rem + 1.6142vw, 3rem);  
@@ -1682,4 +1682,210 @@ animation: pulse 2s 1s ease-out infinite;
         opacity:1;
         transform:translateY(0px);
     }
+}
+
+.contact-from{
+    background-color:#242529;
+
+}
+
+.inside-contact-from{
+    display: flex;
+    background-color:#242529;
+}
+
+@media screen and (max-width:950px){
+    .inside-contact-from{
+        flex-direction: column-reverse;
+    }
+}
+.get_in_touch{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    margin: 5%;
+    gap: 41px;
+}
+@media screen and (max-width:950px){
+    .get_in_touch{
+        width:100%;
+        margin: 18% 0 18% 0;    }
+}
+.get_in_touch h3{
+    font-weight: 600;
+    color:white;
+    text-align: center;
+    font-size: clamp(1.25rem, 1.0805rem + 0.9685vw, 2rem);
+}
+
+.get_in_touch p{
+    color:white;
+    text-align: center;
+}
+.call-get{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.call-inside h6{
+    font-size: clamp(0.99rem, 0.8408rem + 0.8523vw, 1.65rem);
+}
+
+.call-inside p{
+    font-size: clamp(0.75rem, 0.6935rem + 0.3228vw, 1rem);
+}
+@media screen and (max-width:450px)
+{
+    .call-get{
+        gap:2rem;
+    }
+}
+.call-get{
+    color:white;
+}
+.email_get{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;}
+@media screen and (max-width:450px)
+{
+    .email_get{
+        gap:2rem;
+    }
+}
+.email_get h6{
+    color:white;
+}
+.email_inside h6{
+    font-size: clamp(0.99rem, 0.8408rem + 0.8523vw, 1.65rem);
+
+}
+
+.email_inside p{
+    font-size: clamp(0.75rem, 0.6935rem + 0.3228vw, 1rem);
+
+}
+
+.location-get{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;}
+
+.location_inside h6{
+    font-size: clamp(0.99rem, 0.8408rem + 0.8523vw, 1.65rem);
+
+}
+
+.location_inside p{
+    font-size: clamp(0.75rem, 0.6935rem + 0.3228vw, 1rem);
+
+}
+@media screen and (max-width:450px)
+{
+    .location-get{
+        gap:2rem;
+    }
+}
+.location-get h6{
+    color:white;
+}
+.contact-via-email{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     gap: 42px;
+     margin: 5%;
+   
+}
+
+
+@media screen and (max-width:950px){
+    .contact-via-email{
+        width:100%;
+        margin: 18% 0 0 0;    }
+}
+.contact-via-email h3{
+    color:white;
+    font-weight: 600;
+    font-size: clamp(1.25rem, 1.0805rem + 0.9685vw, 2rem);}
+
+.to-contact{
+    width:60%;
+}
+
+@media screen and (max-width:480px){
+    .to-contact{
+        width:75%;
+    }
+}
+.to-contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.name-email{
+    background-color: #242529;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border:solid 1px;
+    height: 40px;
+    border-radius: 2rem;
+  
+}
+.name-email:focus{
+    border:none;
+}
+.to-contact textarea{
+    background-color: #242529;
+    color: white;
+   
+    width:100%;
+    text-align: center;
+    border: solid 1px;
+    height: 100px;
+    border-radius: 2rem;
+}
+
+.to-contact textarea:focus{
+    border:none;
+
+}
+
+.to-contact input[type=submit]
+{
+    background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));
+    color: white;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    border: 0;
+    border-radius: 0.45rem;   
+}
+
+@media screen and (max-width:450px){
+    .to-contact input[type=submit]{
+        width: 140px;
+        height: 40px;
+    }
+}
+
+
+
+.google-map{
+    background-color: #242529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
 }

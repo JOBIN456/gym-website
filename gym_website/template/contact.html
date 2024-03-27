@@ -19,5 +19,58 @@ Phoenix fitness
     CONTACT US
 </h3></div>
 
+<div class="contact-form">
+    <div class="inside-contact-from">
+        <div class="get_in_touch">
+            <div><h3> GET IN TOUCH</h3></div>
+            <div class="call-get">
+                <a href="tel:100000000" target="_blank" ><img  width="30px" height="30px" src="{% static 'images/phone.png' %}" alt=""></a>
+
+                <div class="call-inside">
+
+                    <h6>CALL NOW</h6>
+                    <p>
+                     9524514214,87975451452
+                    </p>
+                </div>
+            </div>
+            <div class="email_get">
+                <a  href = "mailto: abc@example.com" target="_blank" ><img  width="30px" height="30px" src="{% static 'images/mail.png' %}" alt=""></a>
+                <div class="email_inside">
+                    <h6> EMAIL US</h6>
+                    <p>Phoenix123@gmail.com</p>
+                </div>
+            
+            </div>
+            <div class="location-get">
+                <a href="https://maps.app.goo.gl/AshMMC8gyLeBGpk26" target="_blank"><img width="30px" height="30px" src="{% static 'images/location.png' %}" alt=""></a>
+                <div class="location_inside">
+                    <h6>
+                        OUR LOCATION
+                    </h6>
+                    <p> Near railwaygate kundara</p>
+                </div>
+            </div>
+        </div>
+            <div class="contact-via-email">
+                <h3> CONTACT US</h3>
+                <div class="to-contact">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <input class="name-email" type="text" placeholder="Name" required name="full-name">
+                        <input class="name-email" type="email" placeholder=" Email" required name="email">
+                        <textarea placeholder="messages" required name="message"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </div>
+
+    </div>
+</div>
+
+<div class="google-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15764.60714070953!2d76.66851929903905!3d8.958158107604548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b060831cd55791d%3A0x8ed8c54a9ae64b42!2sKundara%2C%20Kerala!5e0!3m2!1sen!2sin!4v1711524138388!5m2!1sen!2sin" width="80%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
 {% endblock %}
