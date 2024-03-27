@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django .core .mail import send_mail
 
 # Create your views here.
 def home(request):
@@ -20,8 +21,12 @@ def contact(request):
             'message':message
 
         }
+        messages='''
+        New message:{}
+        From:{}
+       '''.format(email_info['message'],email_info['email'])
 
-        print(email_info)
+        send_mail(name, messages, '', ["jobinj5210@gmail.com"])
     return render(request,"contact.html")
 def trainers(request):
     return render(request,"trainers.html")

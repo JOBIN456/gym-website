@@ -2,7 +2,7 @@
 
 <nav class="gym-nav">
     <div class="nav-caption">
-        <img   src="{% static 'images/logo.png' %}" >
+        <a href="/"><img   src="{% static 'images/logo.png' %}" ></a>
         <h3 class="gym-name"> Phoenix Gym</h3>
     </div>
     <ul class="gym-pages">
@@ -26,11 +26,11 @@
 
   <nav class="navbar  gym-nav-2">
     <a class="gym-name-2" href="#"><img  width="70px" height="70px"  src="{% static 'images/logo.png' %}" >Phoenix Gym</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <button class="navbar-toggler m-3" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav  .gym-pages-2">
+      <ul class="navbar-nav  gym-pages-2">
         <li class="nav-item">
           <a class="nav-link page-links-1" href="/">Home</a>
         </li>

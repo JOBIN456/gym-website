@@ -231,6 +231,7 @@ body{
  }
  .gym-pages-2{
     z-index: 999;
+    margin-left: 13px !important;
  }
  .carousel-adjust{
     margin-top:5vw;
@@ -1051,9 +1052,9 @@ transform:  scale(1.022);
 }
 
 
-/* .accordion-button.collapsed::after {
+.accordion-button.collapsed::after {
     content: "";
-    background: url("/static/images/phone.png") no-repeat center; 
+    background: url("/static/images/down.png") no-repeat center; 
     display: inline-block;
     width: 20px; 
     height: 20px;
@@ -1061,11 +1062,11 @@ transform:  scale(1.022);
 
 .accordion-button:not(.collapsed)::after {
     content: ""; 
-    background: url("plus.svg") no-repeat center; 
+    background: url("/static/images/uparrow.png") no-repeat center; 
     display: inline-block;
     width: 20px; 
     height: 20px;
-} */
+}
 
 
   .h-about{
