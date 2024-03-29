@@ -431,55 +431,36 @@ body{
 
 
 
-
-
-.my-cards{
-    
-    width:100%;
-    height: 700px;;
-    display:flex;
-   
-   
+ .my-cards{
     background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));    
+ 
+ }
+ .my-cards h3{
+    color:white;
+    text-align: center;
+    padding:3rem 0 0 0 ;
+    font-weight: 600;
+ }
+
+.inside-my-cards{
+    
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 0 8rem 0;
+
    
 
 }
-@media screen and (max-width:1200px)
-{
-    .my-cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 120vh;
-    }
-    
-
-}
-
-@media screen and (max-width:653px)
-{
-  .my-cards  {
-        height: 220vh;
-    }
-}
-
-@media screen and (max-width:450px){
-    .my-cards{
-        height:250vh;
-    }
-}
-@media screen and (max-width:350px){
-    .my-cards{
-        height:280vh;
-    }
-}
-
+ 
 .image-card1{
-    margin:auto;
-    max-width:300px;
+   
+   max-width: 300px;
     width:100%;
-    max-height:400px;
-    height:100%;
+    height:400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -488,12 +469,7 @@ body{
     animation:zoomin ease-in 2s;
 
 }
-@media screen and (max-width:430px){
-    .image-card1{
-        max-height:320px;
-       height:100%;
-    }
-}
+  
 .image-card1:hover{
     transform: scale(1.025); 
 }
@@ -507,18 +483,36 @@ body{
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .image-card1 {
-        margin: 2% 1% 2% 1%;
-    }
-  }
+.inside-image-card1{
+    display: none;
+    max-width:300px;
+    width:100%;
+    max-height: 131px;
+    height: 100%;
+    border-radius: 2rem;
+    position: relative;
+    top: 269px;
+    background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));
+}
 
-  @media screen and (max-width: 450px) {
-    .image-card1 {
-      margin: 3%;
-    }
-  }
+@media (hover: none)
+{
+    .inside-image-card1{
+   display:block;
+    max-width:300px;
+    width:100%;
+    max-height: 131px;
+    height: 100%;
+    border-radius: 2rem;
+    position: relative;
+    top: 269px;
+    
+    background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));  
+    animation:bottomup ease 1s;
 
+
+}
+}
 .image-card1:hover .inside-image-card1{
     display:block;
     max-width:300px;
@@ -534,15 +528,7 @@ body{
 }
 
 
-@media screen and (max-width:430px){
-    .image-card1:hover .inside-image-card1{
-        display:block;
-        max-width:300px;
-        width:100%;
-        max-height: 125px;
-        height: 100%;
-    }
-}
+
 
 @keyframes bottomup{
     0% {
@@ -555,13 +541,11 @@ body{
      }
 }
 
-.inside-image-card1{
-    display: none;
-}
+
 .inside-image-card1 h6{
  color:white;
  font-weight:600;
- font-size:1.35rem;
+ font-size: clamp(0.95rem, 0.8596rem + 0.5165vw, 1.35rem);
  text-align:center;
  padding:4%;
 
@@ -572,7 +556,7 @@ body{
     text-align:center;
     margin:auto;
     padding:2%;
-   
+    font-size: clamp(0.75rem, 0.6935rem + 0.3228vw, 1rem);   
    
    }
 
@@ -608,10 +592,9 @@ body{
   } */
 .parallex-blue{
     background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));
-    height: 600px;
    
 }
-@media screen and (max-width:1178px)
+/* @media screen and (max-width:1178px)
 {
     .parallex-blue{
         height:120vh;
@@ -622,7 +605,7 @@ body{
     .parallex-blue{
         height:160vh;
     }
-}
+} */
 
 .welecome-tag{
     margin:auto;
@@ -631,13 +614,15 @@ body{
     font-weight: 600;
     color:white;
     text-align:center;
-    font-size: clamp(1.45rem, 1.1011rem + 1.9936vw, 3rem);
+    font-size: clamp(1.45rem, 1.2466rem + 1.1622vw, 2.35rem);
+    padding: 2rem 0 .35rem 0;
 }
 
 
 .welecome-tag h3{
     color:white;
-    font-size: clamp(1rem, 0.7749rem + 1.2862vw, 2rem);    text-align: center;
+    text-align: center;
+    font-size: clamp(1rem, 0.8531rem + 0.8394vw, 1.65rem);
 }
 
 .blue-card{
@@ -675,8 +660,7 @@ transform:  scale(1.022);
     border-radius:0 0 1rem 1rem;
 }
 .info-blue h6{
-    font-size: clamp(1rem, 0.7749rem + 1.2862vw, 2rem);
-    color:white;
+    font-size: clamp(0.95rem, 0.8596rem + 0.5165vw, 1.35rem);    color:white;
     font-weight:600;
     text-align: center;
 }
@@ -686,8 +670,7 @@ transform:  scale(1.022);
     color: white;
     padding: 15px;
     text-align: center;
-    font-size: clamp(0.95rem, 0.8825rem + 0.3859vw, 1.25rem);
-    
+    font-size: clamp(0.75rem, 0.6935rem + 0.3228vw, 1rem);    
 }
 .blue-card:hover p{
     animation: fadeup ease 2s;
@@ -702,32 +685,25 @@ transform:  scale(1.022);
  }
  .blue-cards{
     display: flex;
-    margin:3rem 2rem 2rem 2rem;
-    max-height: 400px;
+    /* margin:3rem 2rem 2rem 2rem; */
+   
     height: 100%;
     justify-content: center;
-    gap:2rem;
+    gap:4rem;
     flex-wrap: wrap;
+    padding:4rem 0 15rem 0;
 
  }
 
  
 
- @media screen and (max-width:1178px)
+  @media screen and (max-width:1178px)
  {
     .blue-cards{
-        max-height: fit-content;
-        height:80%;
+      gap:10rem; 
     }
  }
- @media screen and (max-width:796px)
- {
-    .blue-cards{
-        max-height: fit-content;
-        height:93%;
-    }
- }
-
+ 
 
  .offer{
     width:100%;
@@ -1232,10 +1208,23 @@ transform:  scale(1.022);
         opacity:1;
     }
 }
-
 .inside-trainer-card{
     display: none;
 }
+ @media (hover:none){
+.inside-trainer-card{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #0c1f34;
+    opacity: 0.78; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ }
+
 .trainer-card:hover .inside-trainer-card{
     display: flex;
     width: 100%;
@@ -1259,7 +1248,7 @@ transform:  scale(1.022);
 
     }
 }
-
+ 
 
   .inside-trainer-card h3 {
     color:white;
@@ -1433,6 +1422,14 @@ animation: pulse 2s 1s ease-out infinite;
 }
 }
 
+@media screen and (max-width:600px){
+    .whtspp{
+        right:8%;
+        width: 35px;
+        height: 35px;
+        line-height: 28px;
+    }
+}
 
                                 /* CALLER WHATSAPP BUTTONS */
 
@@ -1486,6 +1483,14 @@ animation: pulse 2s 1s ease-out infinite;
     }
     }
     
+    @media screen and (max-width:600px){
+        .caller{
+            right:8%;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+        }
+    }
 
                              /* ABOUT */
 
