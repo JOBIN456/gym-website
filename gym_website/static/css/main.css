@@ -470,8 +470,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 4rem 0 8rem 0;
-
+    padding: 4rem 1rem 8rem 1rem;
    
 
 }
@@ -739,13 +738,13 @@ transform:  scale(1.022);
     justify-content: center;
     gap:4rem;
     flex-wrap: wrap;
-    padding:4rem 0 15rem 0;
+    padding:4rem 1rem 15rem 1rem;
 
  }
 
  
 
-  @media screen and (max-width:1178px)
+  @media screen and (max-width:1210px)
  {
     .blue-cards{
       gap:10rem; 
@@ -872,7 +871,10 @@ transform:  scale(1.022);
     font-family: Montserrat,sans-serif;
     text-align: center;
  } 
-
+.offerlist-1 img{
+    width:60px;
+    height: 60px;
+}
 
 
 
@@ -1115,15 +1117,18 @@ transform:  scale(1.022);
 }
   .i-about{
     width:80%;
+    padding: 4rem 2rem 10rem 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 .ins-about{
-    width: 80%;
-    max-height: 600px;
-    padding: 8% 0 8% 8%;   
-    height: 100%;
+    max-width:350px;
+    width: 100%;
+    
     object-fit:contain;
     animation:lefttocenter ease 2s;
-
+    border-radius: 1rem;
 
 }
 @keyframes lefttocenter{
@@ -1141,7 +1146,7 @@ transform:  scale(1.022);
     .ins-about{
         width: 100%;
         max-height: 600px;
-        padding: 8% 0 8% 0;
+        /* padding: 8% 0 8% 0; */
         height: 100%;
         border-radius: .65rem;
     }
@@ -1273,6 +1278,7 @@ transform:  scale(1.022);
     background-size: cover;
     height:400px;
     animation:bottomtotop ease 2s;
+    border-radius: 1rem;
 
   }
   @keyframes bottomtotop{
@@ -1299,6 +1305,7 @@ transform:  scale(1.022);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 1rem;
 }
 
  }
@@ -1313,6 +1320,7 @@ transform:  scale(1.022);
     justify-content: center;
     align-items: center;
     animation:bottomup ease 2s;
+    border-radius: 1rem;
   }
 
 @keyframes bottomup{
@@ -1383,6 +1391,7 @@ transform:  scale(1.022);
     .inside-facilities{
         flex-direction: column;
         height: 800px;
+        padding: 1rem;
     }
 }
 
@@ -1435,6 +1444,7 @@ transform:  scale(1.022);
 .facility-image{
     width:50%;
     animation:righttocenter ease 2s;
+    padding: 7%;
 }
 
 @keyframes righttocenter{
@@ -1457,7 +1467,7 @@ transform:  scale(1.022);
 }
 .fac-image{
   max-height: 450px;
-  padding: 7%;
+ border-radius: 0.85rem;
   width: 100%;
   height: 100%;
 
@@ -1601,6 +1611,7 @@ animation: pulse 2s 1s ease-out infinite;
 .about-us img{
     width:100%;
     height: 100%;
+    object-fit: fill;
 }
 @media screen  and (max-width:850px)
 {
@@ -1685,6 +1696,7 @@ animation: pulse 2s 1s ease-out infinite;
     justify-content: center;
     align-items: center;
     animation:bottomtotop ease 2s;
+    border-radius: 1rem;
 
 }  
 
