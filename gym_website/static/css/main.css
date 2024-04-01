@@ -137,7 +137,7 @@ body{
   
 }
 .time{
-    font-weight:500;
+    font-weight:700;
     color:white;
     transform: skew(20deg);
    
@@ -152,6 +152,7 @@ body{
     font-size: .75rem;
     text-align:center;
     transform: skew(20deg);
+    font-weight:700;
 
 }
 
@@ -1128,7 +1129,7 @@ transform:  scale(1.022);
     
     object-fit:contain;
     animation:lefttocenter ease 2s;
-    border-radius: 1rem;
+    border-radius: 2rem 0;
 
 }
 @keyframes lefttocenter{
@@ -1467,7 +1468,7 @@ transform:  scale(1.022);
 }
 .fac-image{
   max-height: 450px;
- border-radius: 0.85rem;
+ border-radius: 1rem  0;
   width: 100%;
   height: 100%;
 
