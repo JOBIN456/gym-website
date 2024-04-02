@@ -9,20 +9,20 @@
         <a class="page-links" href="/"><li class="page-names">Home</li></a>
         <a class="page-links" href="{% url 'about' %}"><li class="page-names">About Us</li></a>
         <a class="page-links" href="{% url 'facilities' %}"><li class="page-names">Facilities</li></a>
+        <a class="page-links" href="{% url 'plans' %}"><li class="page-names">Plans</li></a>
+
         <a class="page-links" href="{% url 'trainers' %}"><li class="page-names">Trainers</li></a>
         <a class="page-links" href="{% url 'contact' %}"><li class="page-names">Contact Us</li></a>
     </ul>
     <div class="gym-time">
    <h6 class="time"><img class="clock" src="{% static 'images/alarm.png' %}">Time</h6>
-   <h6 class="time-shedule">Morning: 4:00am-9:00am</h6>
+   <div class="time-flex">
+    <h6 class="time-shedule">Morning: 4:00am-9:00am</h6>
    <h6 class="time-shedule">Evening: 4:00pm-10:00pm</h6>
-    </div>
-
+   </div>
    
+    </div>
 </nav>
-
-
-
 
   <nav class="navbar  gym-nav-2">
     <a class="gym-name-2" href="#"><img  width="70px" height="70px"  src="{% static 'images/logo.png' %}" >Phoenix Gym</a>
@@ -39,6 +39,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link page-links-1" href="{% url 'facilities' %}">Facilities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-links-1" href="{% url 'plans' %}">Plans</a>
         </li>
         <li class="nav-item">
             <a class="nav-link page-links-1" href="{% url 'trainers' %}">Trainers</a>

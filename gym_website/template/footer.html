@@ -11,7 +11,6 @@
                     <img width="20px" height="20px" src="{% static 'images/fb.png' %}" alt="">
                     <img width="20px" height="20px" src="{% static 'images/insta.png' %}" alt="">
                     <img width="20px" height="20px" src="{% static 'images/twitter.png' %}" alt="">
-
                 </div>
         </div>
         <div class="quick-links">
@@ -19,6 +18,7 @@
             <a href="/">Home</a>
             <a href="{% url 'about' %}">About Us</a>
             <a href="{% url 'facilities' %}">Facilities</a>
+            <a href="{% url 'plans' %}">Plans</a>
             <a href="{% url 'trainers' %}">Trainers</a>
             <a href="{% url 'contact' %}">Contact Us</a>
         </div>
@@ -28,15 +28,12 @@
             <h6><a href="tel:100000000" target="_blank"><img width="20px" height="20px" src="{% static 'images/phone.png' %}"> 123-789-255</a></h6>
             <h6><a href = "mailto: abc@example.com" target="_blank"><img width="20px" height="20px" src="{% static 'images/mail.png' %}"> Phoenix123@gmail.com</a></h6>
             <h6><a href="https://maps.app.goo.gl/AshMMC8gyLeBGpk26" target="_blank"><img width="20px" height="20px" src="{% static 'images/location.png' %}">Near kundara railway station</a></h6>
-
         </div>
     </div>
     <div class="copyright">
         <h6>© 2024 Phoenix. All rights reserved</h6>
     </div>
 </div>
-
-
 <div class="my-footer-2">
     <div class="caption-footer-2">
         <h3 class="Footer-name"> Phoenix Gym</h3>
@@ -53,11 +50,13 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body thefirst-acc">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Facilities</a>
-                <a href="#">Trainers</a>
-                <a href="#">Contact Us</a>            </div>
+                <a href="/">Home</a>
+                <a href="{% url 'about' %}">About Us</a>
+                <a href="{% url 'facilities' %}">Facilities</a>
+                <a href="{% url 'plans' %}">Plans</a>
+                <a href="{% url 'trainers' %}">Trainers</a>
+                <a href="{% url 'contact' %}">Contact Us</a>        
+             </div>
           </div>
         </div>
         <div class="accordion-item">
@@ -79,11 +78,8 @@
         <img width="20px" height="20px" src="{% static 'images/fb.png' %}" alt="">
         <img width="20px" height="20px" src="{% static 'images/insta.png' %}" alt="">
         <img width="20px" height="20px" src="{% static 'images/twitter.png' %}" alt="">
-
     </div>
     <div class="copyright-2">
         <h6>© 2024 Phoenix. All rights reserved</h6>
     </div>
-
-
 </div>

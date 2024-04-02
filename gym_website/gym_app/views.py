@@ -30,3 +30,7 @@ def contact(request):
     return render(request,"contact.html")
 def trainers(request):
     return render(request,"trainers.html")
+
+
+def plans(request):
+    return render(request,"plans.html")
