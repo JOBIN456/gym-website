@@ -17,7 +17,9 @@ const observer = new IntersectionObserver((entries) => {
             else {
                 entry.target.classList.remove('train-card-animation')
             }
-        
+        if(entry.isIntersecting){
+            observer.unobserve(entry.target)
+        }
     })
 },
    { threshold: 0.5
@@ -34,30 +36,7 @@ const observer = new IntersectionObserver((entries) => {
 
 
 
-// const the_animation_1= document.querySelectorAll('.our-trainers')
-// const the_observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         if (entry.isIntersecting)
-//         {
-//             entry.target.classList.add('our-trainers-animation')
-
-//         }
-//         else{
-//             entry.target.classList.remove('our-trainers-animation')
-//         }
-//     })
-// },
-// {
-//     threshold:0.5
-
-// }
-//   );
-//   for (let i = 0; i < the_animation_1.length; i++) {
-//     const elements = the_animation_1[i];
- 
-//     the_observer .observe(elements);
-//    } 
- 
+  
 
 
 
