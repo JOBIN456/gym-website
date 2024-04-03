@@ -71,9 +71,16 @@ const the_observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('our-trainers-animation');
-        } else {
+
+        } 
+        else {
+
             entry.target.classList.remove('our-trainers-animation');
         }
+    //    if (entry.isIntersecting)
+    //    {
+    //     the_observer.unobserve(entry.target)
+    //    }
     });
 }, {
     threshold: 0.5
