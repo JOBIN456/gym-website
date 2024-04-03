@@ -3,13 +3,13 @@
 <nav class="gym-nav">
     <div class="nav-caption">
         <a href="/"><img   src="{% static 'images/logo.png' %}" ></a>
-        <h3 class="gym-name"> Phoenix Gym</h3>
+        <h3 class="gym-name"> Apex Gym</h3>
     </div>
     <ul class="gym-pages">
         <a class="page-links" href="/"><li class="page-names">Home</li></a>
         <a class="page-links" href="{% url 'about' %}"><li class="page-names">About Us</li></a>
         <a class="page-links" href="{% url 'facilities' %}"><li class="page-names">Facilities</li></a>
-        <a class="page-links" href="{% url 'plans' %}"><li class="page-names">Plans</li></a>
+        <a class="page-links" href="{% url 'plans' %}"><li class="page-names">Packages</li></a>
 
         <a class="page-links" href="{% url 'trainers' %}"><li class="page-names">Trainers</li></a>
         <a class="page-links" href="{% url 'contact' %}"><li class="page-names">Contact Us</li></a>
@@ -25,7 +25,7 @@
 </nav>
 
   <nav class="navbar  gym-nav-2">
-    <a class="gym-name-2" href="#"><img  width="70px" height="70px"  src="{% static 'images/logo.png' %}" >Phoenix Gym</a>
+    <a class="gym-name-2" href="#"><img  width="70px" height="70px"  src="{% static 'images/logo.png' %}" >Apex Gym</a>
     <button class="navbar-toggler m-3" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -41,7 +41,7 @@
           <a class="nav-link page-links-1" href="{% url 'facilities' %}">Facilities</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link page-links-1" href="{% url 'plans' %}">Plans</a>
+          <a class="nav-link page-links-1" href="{% url 'plans' %}">Packages</a>
         </li>
         <li class="nav-item">
             <a class="nav-link page-links-1" href="{% url 'trainers' %}">Trainers</a>
