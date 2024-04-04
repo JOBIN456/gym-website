@@ -11,37 +11,46 @@ Phoenix fitness
 </div>
 
 <div class="plans">
-    <h3>OUR PACKAGES</h3>
-    <div class="plan-inside">
-      <div class="plan-cards">
+  <h3 data-aos="fade-right" data-aos-duration="1000"
+  data-aos-easing="ease-in-out">OUR PLANS</h3>
+  <div class="plan-inside">
+    <a href="{% url 'plans' %}">
+        <div class="plan-cards" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
         <div class="plan-titles">
           <h2>Basic</h2>
           <h4> ₹ 1200</h4>
           <h5>Per month</h5>
         </div>
-         <p>This plan typically provides access to basic gym facilities during standard operating hours.
+        <p>This plan typically provides access to basic gym facilities during standard operating hours.
           It may include access to cardio and strength training equipment, as well as locker room facilities.
-         </p>   
+        </p>   
       </div>
-  
-      <div class="plan-cards">
+    </a>
+    <a href="{% url 'plans' %}">
+      <div class="plan-cards" data-aos="fade-up" data-aos-duration="1000"
+      data-aos-easing="ease-in-out" >
         <div class="plan-titles">
           <h2>Premium </h2>
           <h4> ₹ 2000</h4>
           <h5>Per month</h5>
         </div>
-         <p>A premium membership plan offers additional perks and amenities beyond what is included in the basic plan. This might include access to specialty classes, personal training sessions
-         </p>   
+        <p>A premium membership plan offers additional perks and amenities beyond what is included in the basic plan. This might include access to specialty classes, personal training sessions
+        </p>   
       </div>
-      <div class="plan-cards">
+    </a>
+    <a href="{% url 'plans' %}">
+      <div class="plan-cards" data-aos="fade-up" data-aos-duration="1000"
+      data-aos-easing="ease-in-out">
         <div class="plan-titles">
           <h2>Family </h2>
           <h4> ₹ 1800</h4>
           <h5>Per month</h5>
         </div>
-         <p>Designed for families or couples, this plan offers discounted rates for multiple individuals signing up together. It typically includes access to all gym facilities for each member.
-         </p>   
+        <p>Designed for families or couples, this plan offers discounted rates for multiple individuals signing up together. It typically includes access to all gym facilities for each member.
+        </p>   
       </div>
-    </div>
+    </a>
   </div>
+</div>
 {% endblock %}

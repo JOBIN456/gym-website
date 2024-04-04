@@ -472,23 +472,13 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     padding:3rem 0 0 0 ;
     font-weight: 600;
     font-size: clamp(1.45rem, 1.2466rem + 1.1622vw, 2.35rem);
-    animation:lefttocenter ease 2s;
     background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
  }
 
- @keyframes lefttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(-100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+
 
 .inside-my-cards{
     
@@ -576,16 +566,6 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
 
 
 
-@keyframes bottomup{
-    0% {
-        opacity: 0;
-      
-     }
-     100% {
-        opacity: 1;
-      
-     }
-}
 
 
 .inside-image-card1 h6{
@@ -663,45 +643,25 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     text-align:center;
     font-size: clamp(1.45rem, 1.2466rem + 1.1622vw, 2.35rem);
     padding: 2rem 0 .35rem 0;
-    animation:lefttocenter ease 2s;
     background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
 }
 
-@keyframes lefttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(-100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+
 
 
 .welecome-tag h3{
     text-align: center;
     font-size: clamp(1rem, 0.8531rem + 0.8394vw, 1.65rem);
-    animation:righttocenter ease 2s;
     background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
 
 }
-@keyframes righttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+
 
 
 .blue-card{
@@ -710,19 +670,9 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     height: 220px;
     border-radius:2rem;
     transition: transform .2s;
-    animation:bottomtotop ease 2s;
 }
 
-@keyframes bottomtotop{
-    0%{
-       opacity: 0;
-       transform: translateY(100px); 
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+
 
 .blue-card:hover{
 transform:  scale(1.022);
@@ -799,20 +749,10 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     margin-top: 32px;
     font-weight: 700;
     font-size: clamp(1rem, 0.8987rem + 0.5788vw, 1.45rem);
-    animation:righttocenter ease 2s;
 
  }
 
- @keyframes righttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+ 
  .offer h2{
     text-align: center;
     color: #2d2d2d;
@@ -821,18 +761,8 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     font-weight: 700;
     letter-spacing: 10px; 
     font-size: clamp(1.45rem, 1.3262rem + 0.7074vw, 2rem);
-    animation:lefttocenter ease 2s;
  }
- @keyframes lefttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(-100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+ 
 
  @media screen and (max-width:435px){
     .offer h2{
@@ -1026,7 +956,7 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     .my-footer-2{
         display: block;
         width:100%;
-background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%,rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%,rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%,rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%,rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%,rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%,rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%),linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%,rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%,rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%,rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%,rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%,rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%,rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%,rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%),linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%,rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%,rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%,rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%),linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%,rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%,rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%,rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%,rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%,rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%),linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%,rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%,rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%,rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%,rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%,rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%,rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%,rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%),linear-gradient(97deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%,rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%,rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001000000000005%,rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%,rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%,rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%),linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%,rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%,rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%,rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%),linear-gradient(90deg, hsl(98,0%,0%),hsl(98,0%,0%));        animation: fadeInAnimation ease 2s;
+       background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%,rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%,rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%,rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%,rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%,rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%,rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%),linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%,rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%,rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%,rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%,rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%,rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%,rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%,rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%),linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%,rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%,rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%,rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%),linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%,rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%,rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%,rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%,rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%,rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%),linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%,rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%,rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%,rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%,rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%,rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%,rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%,rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%),linear-gradient(97deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%,rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%,rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001000000000005%,rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%,rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%,rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%),linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%,rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%,rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%,rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%),linear-gradient(90deg, hsl(98,0%,0%),hsl(98,0%,0%));        animation: fadeInAnimation ease 2s;
 
     }
 }
@@ -1158,20 +1088,10 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     width: 100%;
     
     object-fit:contain;
-    animation:lefttocenter ease 2s;
     border-radius: 2rem 0;
 
 }
-@keyframes lefttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(-100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+
 
 @media screen and (max-width:958px){
     .ins-about{
@@ -1189,21 +1109,11 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     flex-direction: column;
     gap: 22px;
     padding: 0 4% 0 0;
-    animation:righttocenter ease 2s;
 
 
   }
 
-  @keyframes righttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+  
 
 
   @media screen and (max-width:958px){
@@ -1326,28 +1236,11 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     background-size: cover;
     height:400px;
     border-radius: 1rem;
-    opacity: 0;
-    transform: translateY(100px); 
-    transition: all 0.7s ease-out;
-    transition-delay: 0.2s;
 
   }
 
-  .train-card-animation{
-    opacity: 1;
-    transform: translateY(0);
-
-  }
-  /* @keyframes bottomtotop{
-    0%{
-       opacity: 0;
-       transform: translateY(100px); 
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-} */
+  
+ 
 
 .inside-trainer-card{
     display: none;
@@ -1418,19 +1311,11 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     font-weight: 700;
     letter-spacing: 10px;
     font-size: clamp(1.45rem, 1.3262rem + 0.7074vw, 2rem);
-    opacity:0;
-    transform: translateX(-100px);
-    transition: all 0.7s ease-out;
-    transition-delay: 0.2s;
-
+    
     }
 
 
-    .our-trainers-animation{
-        opacity:1;
-        transform: translateX(0px);
-    }   
-
+    
 
 
 
@@ -1459,7 +1344,6 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     display:flex;
     flex-direction: column;
     gap:20px;
-    animation:lefttocenter ease 2s;
     padding:4%;
 
 }
@@ -1472,16 +1356,7 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     }
 }
 
-@keyframes lefttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(-100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+
 
 
 
@@ -1502,20 +1377,10 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
 
 .facility-image{
     width:50%;
-    animation:righttocenter ease 2s;
     padding: 7%;
 }
 
-@keyframes righttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+
 
 
 @media screen and (max-width:958px){
@@ -1688,21 +1553,12 @@ animation: pulse 2s 1s ease-out infinite;
     top: 50%;
     text-align: center;
     letter-spacing: 1;
-    font-size: clamp(1.75rem, 1.4675rem + 1.6142vw, 3rem);  
+    font-size: clamp(1.75rem, 1.4675rem + 1.6142vw, 3rem); 
     animation:fadeb ease 2s;
+ 
 }
 
 
-@keyframes fadeb{
-    0%{
-        opacity:0;
-        transform: translateY(100px);
-    }
-    100%{
-        opacity:1;
-        transform:translateY(0px);
-    }
-}
 
 .testimony{
     background-color: white;
@@ -1712,19 +1568,8 @@ animation: pulse 2s 1s ease-out infinite;
     font-family: Montserrat,sans-serif;
     font-weight: 700;
     font-size: clamp(1rem, 0.8987rem + 0.5788vw, 1.45rem);
-    animation:righttocenter ease 2s;
     text-align: center;
     padding: 4rem 0 0 0;
-}
-@keyframes righttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
 }
 
 .inside-testimony{
@@ -1754,21 +1599,11 @@ animation: pulse 2s 1s ease-out infinite;
     background: white;
     justify-content: center;
     align-items: center;
-    animation:bottomtotop ease 2s;
     border-radius: 1rem;
 
 }  
 
-@keyframes bottomtotop{
-    0%{
-       opacity: 0;
-       transform: translateY(100px); 
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+
 
 
 .testimony-card:hover{
@@ -1875,20 +1710,12 @@ animation: pulse 2s 1s ease-out infinite;
     top: 60%;
     text-align: center;
     letter-spacing: 1;
-    font-size: clamp(1.75rem, 1.4675rem + 1.6142vw, 3rem);  
+    font-size: clamp(1.75rem, 1.4675rem + 1.6142vw, 3rem);
     animation:fadeb ease 2s;
+  
 }
 
-@keyframes fadeb{
-    0%{
-        opacity:0;
-        transform: translateY(100px);
-    }
-    100%{
-        opacity:1;
-        transform:translateY(0px);
-    }
-}
+
 
 
 
@@ -2011,19 +1838,9 @@ animation: pulse 2s 1s ease-out infinite;
     width:30%;
     margin: 5%;
     gap: 41px;
-    animation:lefttocenter ease 2s;
 
 }
-@keyframes lefttocenter{
-    0%{
-        opacity:0;
-        transform: translateX(-100px);
-    }
-    100%{
-        opacity:1;
-        transform: translateX(0px);
-    }
-}
+
 
 @media screen and (max-width:950px){
     .get_in_touch{
@@ -2135,25 +1952,14 @@ animation: pulse 2s 1s ease-out infinite;
     color:white;
     font-weight: 600;
     font-size: clamp(1.25rem, 1.0805rem + 0.9685vw, 2rem);
-    animation:bottomtotop ease 2s;
 
 }
 
 .to-contact{
     width:60%;
-    animation:bottomtotop ease 2s;
 }
 
-@keyframes bottomtotop{
-    0%{
-       opacity: 0;
-       transform: translateY(100px); 
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+
 
 @media screen and (max-width:480px){
     .to-contact{
@@ -2275,7 +2081,6 @@ animation: pulse 2s 1s ease-out infinite;
   background:white;
   justify-content: center;
   align-items: center;
-  animation: bottomtotop ease 2s;
   border-radius: 2rem 0;
 }
 
@@ -2359,19 +2164,9 @@ animation: pulse 2s 1s ease-out infinite;
     top: 60%;
     text-align: center;
     letter-spacing: 1;
-    font-size: clamp(1.75rem, 1.4675rem + 1.6142vw, 3rem);  
+    font-size: clamp(1.75rem, 1.4675rem + 1.6142vw, 3rem); 
     animation:fadeb ease 2s;
+ 
 }
 
-
-@keyframes fadeb{
-    0%{
-        opacity:0;
-        transform: translateY(100px);
-    }
-    100%{
-        opacity:1;
-        transform:translateY(0px);
-    }
-}
 
