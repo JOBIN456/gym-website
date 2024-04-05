@@ -66,3 +66,36 @@
 // });
 
 // the_observer.observe(the_animation_1);
+
+
+// $(document).ready(function(){
+//     $(".inside-testimony").owlCarousel();
+//   });
+
+
+// $('.owl-carousel').owlCarousel({
+//     loop:true,
+//     items:3,
+    
+//     autoplay:true,
+  
+//     autoplayTimeout:1000,
+//     autoplayHoverPause:true,
+//     responsive:{
+//       0:{
+//       items:1,
+//       nav:false
+//       },
+//       600:{
+//       items:1,
+//       nav:false
+//       },
+//       1000:{
+//       items:3,
+     
+//       loop:false
+//       }
+//     }
+    
+ 
+// })

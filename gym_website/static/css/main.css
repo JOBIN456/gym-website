@@ -250,7 +250,7 @@ body{
  }
  
  .my-carousel-image{
-    max-height:800px;
+    max-height:900px;
     height:100%;
     object-fit:cover;
     width:100%;
@@ -1163,22 +1163,13 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     border-radius: 0.45rem;
     text-decoration: none;
     text-align: center;
-    animation: fadein ease 2s;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100%{
-        opacity:1;
-    }
-}
 
 
 @media screen and (max-width:450px){
@@ -1264,7 +1255,7 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: #0c1f34;
+    background-color:#000000;
     opacity: 0.78; 
     flex-direction: column;
     justify-content: center;
@@ -1715,7 +1706,18 @@ animation: pulse 2s 1s ease-out infinite;
   
 }
 
+.my-cards-2{
+    background-color: white;
 
+}
+
+.my-cards-2 h3{
+    color:#000000;
+    text-align: center;
+    padding:3rem 0 0 0 ;
+    font-weight: 600;
+    font-size: clamp(1.45rem, 1.2466rem + 1.1622vw, 2.35rem); 
+}
 
 
 
