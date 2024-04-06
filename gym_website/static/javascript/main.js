@@ -73,29 +73,38 @@
 //   });
 
 
-// $('.owl-carousel').owlCarousel({
-//     loop:true,
-//     items:3,
-    
-//     autoplay:true,
-  
-//     autoplayTimeout:1000,
-//     autoplayHoverPause:true,
-//     responsive:{
-//       0:{
-//       items:1,
-//       nav:false
-//       },
-//       600:{
-//       items:1,
-//       nav:false
-//       },
-//       1000:{
-//       items:3,
-     
-//       loop:false
-//       }
-//     }
-    
- 
-// })
+
+
+
+
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function() {
+    loader.style.display = "none";
+});
+
+
+
+
+
+let mybutton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 400
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

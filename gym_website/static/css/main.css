@@ -67,7 +67,7 @@ body{
    
  
     background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   
  
@@ -91,7 +91,7 @@ body{
     animation: fadeInAnimation ease 2s;
     text-align: center;
     background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -207,7 +207,7 @@ body{
   text-align: center;
   text-decoration: none;
   background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 @keyframes fadeInAnimation{
@@ -242,7 +242,7 @@ body{
  .page-links-1:hover{
     
     background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%) !important;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
    
    
@@ -473,7 +473,7 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     font-weight: 600;
     font-size: clamp(1.45rem, 1.2466rem + 1.1622vw, 2.35rem);
     background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
-  -webkit-background-clip: text;
+    background-clip: text;
   -webkit-text-fill-color: transparent;
 
  }
@@ -644,7 +644,7 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     font-size: clamp(1.45rem, 1.2466rem + 1.1622vw, 2.35rem);
     padding: 2rem 0 .35rem 0;
     background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
-  -webkit-background-clip: text;
+    background-clip: text;
   -webkit-text-fill-color: transparent;
 
 }
@@ -656,7 +656,7 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
     text-align: center;
     font-size: clamp(1rem, 0.8531rem + 0.8394vw, 1.65rem);
     background-image: repeating-linear-gradient(to right, #a2682a 0%, #be8c3c 8%, #be8c3c 18%, #d3b15f 27%, #faf0a0 35%, #ffffc2 40%, #faf0a0 50%, #d3b15f 58%, #be8c3c 67%, #b17b32 77%, #bb8332 83%, #d4a245 88%, #e1b453 93%, #a4692a 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     
 
@@ -1591,7 +1591,9 @@ animation: pulse 2s 1s ease-out infinite;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-
+    -webkit-box-shadow: 3px 3.5px 16px 6px #b7b7b7;
+    -moz-box-shadow: 3px 3.5px 16px 6px #b7b7b7;
+    box-shadow: 3px 3.5px 16px 6px #b7b7b7;
 }  
 
 
@@ -2172,3 +2174,47 @@ animation: pulse 2s 1s ease-out infinite;
 }
 
 
+#preloader{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.spinner {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   background: radial-gradient(farthest-side,#0909b5 94%,#0000) top/9px 9px no-repeat,
+    conic-gradient(#0000 30%,#0909b5);
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+   animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+   100% {
+      transform: rotate(1turn);
+   }
+}
+
+
+.bottom-to-top{
+    /* background-image: url('/static/images/up.png');
+    background-repeat: no-repeat; */
+    width:50px;
+    height:60px;
+    display: block;
+    text-align: center;
+    line-height: 52px;
+    background-color: #0c1f34;
+    position: fixed;
+    left:4%;
+    bottom:8%;
+    z-index: 999;
+    border-radius:4rem;
+    cursor: pointer;
+}
