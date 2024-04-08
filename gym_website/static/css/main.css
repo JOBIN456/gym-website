@@ -2086,6 +2086,7 @@ animation: pulse 2s 1s ease-out infinite;
   justify-content: center;
   align-items: center;
   border-radius: 2rem 0;
+  box-shadow: 3px 3.5px 16px 6px #b7b7b7;
 }
 
 .plan-titles{
@@ -2203,8 +2204,7 @@ animation: pulse 2s 1s ease-out infinite;
 
 
 .bottom-to-top{
-    /* background-image: url('/static/images/up.png');
-    background-repeat: no-repeat; */
+   
     width:50px;
     height:60px;
     display: block;
@@ -2217,4 +2217,42 @@ animation: pulse 2s 1s ease-out infinite;
     z-index: 999;
     border-radius:4rem;
     cursor: pointer;
+
+}
+
+.bottom-to-top img{
+    animation:display ease-in-out 2s infinite;
+    width:20px;
+     height:20px;
+
+}
+
+
+@keyframes display {
+    0%{
+        opacity:0;
+        transform: translateY(10px);
+    }
+    /* 50%{
+        opacity:0.87;
+        transform: translateY(5px);
+
+    } */
+    100%{
+        opacity:1;
+        transform: translateY(-10px);
+
+    }
+}
+
+@media screen and (max-width:450px){
+    .bottom-to-top{
+        width: 40px;
+        height: 56px;
+    }
+
+    .bottom-to-top img{
+        width:18px;
+        height:18px;
+    }
 }
