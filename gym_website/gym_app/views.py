@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django .core .mail import send_mail
-
+from django.contrib import messages
 # Create your views here.
 def home(request):
     return render(request,"home.html")
@@ -21,12 +21,16 @@ def contact(request):
             'message':message
 
         }
-        messages='''
+        inside_email='''
         New message:{}
         From:{}
        '''.format(email_info['message'],email_info['email'])
-
-        send_mail(name, messages, '', ["jobinj5210@gmail.com"])
+        try:
+           send_mail(name,  inside_email, '', ["jobinj5210@gmail.com"])
+           messages.success( request,'Succesfully sented')
+        except:
+            messages.error(request,"Contacting Failed")
+            
     return render(request,"contact.html")
 def trainers(request):
     return render(request,"trainers.html")

@@ -37,7 +37,7 @@ Phoenix fitness
             <div class="email_get">
                 <a  href = "mailto: abc@example.com" target="_blank" ><img  width="30px" height="30px" src="{% static 'images/mail.png' %}" alt=""></a>
                 <div class="email_inside">
-                    <h6> EMAIL US</h6>
+                    <h6> EMAIL  US</h6>
                     <p>Apex123@gmail.com</p>
                 </div>
             </div>
@@ -62,6 +62,11 @@ Phoenix fitness
                         <textarea placeholder="messages" required name="message"></textarea>
                         <input type="submit" value="Submit">
                     </form>
+                    {% if messages %}
+                    {% for message in messages %}
+                    <script> alert("{{message}}")</script>
+                    {% endfor %}
+                    {% endif %}
                 </div>
             </div>
     </div>

@@ -1389,6 +1389,7 @@ background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213
 }
 
 
+                                /* CALLER WHATSAPP BUTTONS */
 
 .whtspp{
 
@@ -1450,7 +1451,6 @@ animation: pulse 2s 1s ease-out infinite;
     }
 }
 
-                                /* CALLER WHATSAPP BUTTONS */
 
     .caller{
     
@@ -1890,7 +1890,10 @@ animation: pulse 2s 1s ease-out infinite;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;}
+    gap: 2rem;
+    padding-right: 2rem;
+
+}
 @media screen and (max-width:450px)
 {
     .email_get{
